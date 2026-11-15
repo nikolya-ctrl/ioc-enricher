@@ -1,0 +1,9 @@
+# Python virtual environment
+.venv/
+
+# Auto-generated caches
+__pycache__/
+.pytest_cache/
+
+# Secrets - API keys go here later, NEVER into Git
+.env
