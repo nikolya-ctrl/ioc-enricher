@@ -19,12 +19,14 @@ up in threat-intelligence services, the tool should:
 
 - `is_ip()`: checks whether a value is a valid IPv4 or IPv6 address
 - `is_public_ip()`: checks whether an IP is publicly routable
+- `is_sha256()`: checks whether a value is a valid SHA-256 file hash
 
 ## Planned
 
 - Detect domains and file hashes (MD5, SHA-1, SHA-256)
 - Handle defanged IOCs such as `evil[.]com`
 - Query threat-intelligence sources and produce JSON reports
+- Detect domains and other hash types (MD5, SHA-1)
 
 ## Setup (Windows / PowerShell)
 
