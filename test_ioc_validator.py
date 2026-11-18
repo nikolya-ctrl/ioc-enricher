@@ -1,4 +1,4 @@
-from ioc_validator import is_public_ip, is_sha256
+from ioc_validator import is_public_ip, is_sha256, refang
 
 
 def test_google_dns_is_public():
@@ -15,3 +15,9 @@ def test_real_sha256_is_detected():
 
 def test_YOUR_NAME_HERE():
     assert is_sha256("YOUR-NOT-A-HASH-EXAMPLE") == False
+
+def test_refang_domain():
+    assert refang("evil[.]com") == "evil.com" 
+
+def test_refang_ip():       
+    assert refang("192[.]168[.]1[.]10") == "192.168.1.10"

@@ -18,3 +18,6 @@ def is_public_ip(value):
 
 def is_sha256(value):
     return re.fullmatch(r"[a-fA-F0-9]{64}", value) is not None
+
+def refang(value):
+    return value.strip().replace("[.]", ".")
